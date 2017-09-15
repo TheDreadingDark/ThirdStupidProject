@@ -37,6 +37,12 @@ public class StupidController
 		PlayDohCircle thirdCircle = new PlayDohCircle(10);
 		System.out.println(thirdCircle);
 		
+		System.out.println("What size should we change the circle to?");
+		int updated = myScanner.nextInt();
+		thirdCircle.setSize(updated);
+		System.out.println("The circle now is.....");
+		System.out.println(thirdCircle);
+		
 		PlayDohTrapezoid firstTrapezoid = new PlayDohTrapezoid();
 		PlayDohTrapezoid secondTrapezoid;
 		secondTrapezoid = new PlayDohTrapezoid();
@@ -47,6 +53,9 @@ public class StupidController
 		
 		PlayDohTrapezoid thirdTrapezoid = new PlayDohTrapezoid(13);
 		System.out.println(thirdTrapezoid);
+	
+		firstScanner.close();
+		myScanner.close();
 	}
 	
 }
