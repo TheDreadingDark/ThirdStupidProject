@@ -6,12 +6,50 @@ import java.util.Scanner;
 
 public class StupidController
 {
+	private String [] words;
+	private int [] numbers;
+	
+	public StupidController()
+	{
+		words = new String [5];
+		numbers = new int [10];
+	}
+	
 	
 	public void start()
 	{
-		System.out.println("I like to play videogames");
+		System.out.println(words);
+		System.out.println(numbers);
 		
-		testScanner();
+		words[0] = "My name";
+		words[1] = "is Slim";
+		words[2] = "Shady";
+		words[4] = "Eminem";
+		words[3] = "By";
+		
+		System.out.println(words[0]);
+		System.out.println(words[1]);
+		System.out.println(words[2]);
+		
+		for (String current : words)
+		{
+			System.out.println(current);
+		}
+		
+		for (int index = 0; index < numbers.length; index += 1)
+		{
+			numbers[index] = index + 1;
+			
+			System.out.println(numbers[index]);
+		}
+		
+		words = new String [] {"one", "two", "three", "four", "five"};
+
+
+
+//		System.out.println("I like to play videogames");
+		
+//		testScanner();
 	}
 	
 	private void testScanner()
@@ -56,6 +94,7 @@ public class StupidController
 	
 		firstScanner.close();
 		myScanner.close();
+		
 	}
 	
 }
